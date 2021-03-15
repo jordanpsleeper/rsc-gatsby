@@ -1,5 +1,6 @@
 require('dotenv').config();
 const path = require('path');
+const tsconfig = require('./tsconfig.json');
 
 module.exports = {
   flags: {
@@ -8,6 +9,15 @@ module.exports = {
   plugins: [
     'gatsby-plugin-styled-components',
     'gatsby-plugin-react-helmet',
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: Object.entries(tsconfig.compilerOptions.paths).reduce((acc, [key, [value]]) => {
+          acc[key.replace('/*', '')] = path.resolve(value.replace('/*', ''));
+          return acc;
+        }, {}),
+      },
+    },
     // {
     //   resolve: 'gatsby-source-shopify',
     //   options: {
@@ -20,13 +30,5 @@ module.exports = {
     //     downloadImages: false,
     //   },
     // },
-    {
-      resolve: `gatsby-plugin-alias-imports`,
-      options: {
-        alias: {
-          '~components': path.resolve(__dirname, 'src/components'),
-        },
-      },
-    },
   ],
 };

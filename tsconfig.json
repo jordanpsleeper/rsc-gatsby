@@ -16,7 +16,8 @@
     "esModuleInterop": true,
     "jsx": "preserve",
     "paths": {
-      "~components/*": ["./src/components/*"]
+      "~components/*": ["./src/components/*"],
+      "~shared/*": ["../../shared/*"]
     }
   }
 }
