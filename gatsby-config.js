@@ -10,9 +10,7 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-alias-imports`,
-      options: {
-        alias: aliases,
-      },
+      options: { alias: aliases },
     },
     // {
     //   resolve: 'gatsby-source-shopify',
