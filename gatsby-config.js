@@ -1,6 +1,5 @@
 require('dotenv').config();
-const path = require('path');
-const tsconfig = require('./tsconfig.json');
+const aliases = require('./src/helpers/aliasPaths');
 
 module.exports = {
   flags: {
@@ -12,10 +11,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
-        alias: Object.entries(tsconfig.compilerOptions.paths).reduce((acc, [key, [value]]) => {
-          acc[key.replace('/*', '')] = path.resolve(value.replace('/*', ''));
-          return acc;
-        }, {}),
+        alias: aliases,
       },
     },
     // {
