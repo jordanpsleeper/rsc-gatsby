@@ -17,6 +17,7 @@
     "jsx": "preserve",
     "paths": {
       "~components/*": ["./src/components/*"],
+      "~themes/*": ["./src/themes/*"],
       "~shared/*": ["../../shared/*"]
     }
   }

@@ -2,7 +2,7 @@ import React from 'react';
 import Meta from '../Meta';
 import getLayout from './getLayout';
 import GlobalStyles from '../GlobalStyles';
-import Theme from '../Theme';
+import Theme from '~themes/Theme';
 
 type LayoutProps = {
   layout?: string;
@@ -16,8 +16,8 @@ const Layout = ({ layout, seo, ...props }: LayoutProps) => {
   return (
     <Theme>
       <GlobalStyles />
-        <Meta {...seo} />
-        <PageLayout {...props} />
+      <Meta {...seo} />
+      <PageLayout {...props} />
     </Theme>
   );
 };
