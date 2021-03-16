@@ -1,5 +1,5 @@
-const tsconfig = require('../../tsconfig.json');
 const path = require('path');
+const tsconfig = require('../../tsconfig.json');
 
 // transforms
 // "~components/*": ["./src/components/*"] => `~components/: path.resolve("./src/components")`
