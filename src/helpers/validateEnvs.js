@@ -1,3 +1,4 @@
+require('dotenv').config();
 const yup = require('yup');
 
 const EnvSchema = yup.object().shape({

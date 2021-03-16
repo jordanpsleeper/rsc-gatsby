@@ -1,4 +1,3 @@
-require('dotenv').config();
 require('./src/helpers/validateEnvs');
 const { gatsbyConfigAliases } = require('./src/helpers/aliasPaths');
 
