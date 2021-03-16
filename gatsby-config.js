@@ -1,4 +1,4 @@
-require('./src/helpers/validateEnvs');
+require('./src/helpers/validateEnvVars');
 const { gatsbyConfigAliases } = require('./src/helpers/aliasPaths');
 
 module.exports = {
