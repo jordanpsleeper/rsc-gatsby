@@ -1,5 +1,5 @@
 require('dotenv').config();
-const aliases = require('./src/helpers/aliasPaths');
+const aliases = require('./src/helpers/aliasPaths.ts');
 
 module.exports = {
   flags: {
