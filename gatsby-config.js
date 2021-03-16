@@ -1,5 +1,6 @@
 require('dotenv').config();
-const { gatsbyConfigAliases } = require('./src/helpers/aliasPaths.ts');
+require('./src/helpers/validateEnvs');
+const { gatsbyConfigAliases } = require('./src/helpers/aliasPaths');
 
 module.exports = {
   flags: {
