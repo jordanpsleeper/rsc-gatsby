@@ -20,4 +20,5 @@ module.exports = {
       typescript: {},
     },
   },
+  ignorePatterns: ['public', '.cache', 'node_modules'],
 };
