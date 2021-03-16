@@ -16,6 +16,10 @@ const Meta = ({ description, lang, meta, pageTitle, keywords, children }) => (
         name: 'keywords',
         content: keywords,
       },
+      {
+        name: 'robots',
+        content: process.env.GATSBY_ROBOTS,
+      },
       ...meta,
     ]}
   >
