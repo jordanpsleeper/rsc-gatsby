@@ -1,5 +1,5 @@
 require('dotenv').config();
-const aliases = require('./src/helpers/aliasPaths.ts');
+const { gatsbyConfigAliases } = require('./src/helpers/aliasPaths.ts');
 
 module.exports = {
   flags: {
@@ -10,7 +10,7 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-alias-imports`,
-      options: { alias: aliases },
+      options: { alias: gatsbyConfigAliases },
     },
     // {
     //   resolve: 'gatsby-source-shopify',
