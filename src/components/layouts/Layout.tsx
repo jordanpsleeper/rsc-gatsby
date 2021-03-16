@@ -1,7 +1,7 @@
 import React from 'react';
-import Meta from '../Meta';
 import getLayout from './getLayout';
-import GlobalStyles from '../GlobalStyles';
+import Meta from '~components/Meta';
+import GlobalStyles from '~components/GlobalStyles';
 import Theme from '~themes/Theme';
 
 type LayoutProps = {
