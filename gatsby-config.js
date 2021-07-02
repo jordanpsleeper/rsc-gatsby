@@ -15,13 +15,8 @@ module.exports = {
     // {
     //   resolve: 'gatsby-source-shopify',
     //   options: {
-    //     shopName: process.env.GATSBY_SHOPIFY_SHOP_NAME,
-    //     accessToken: process.env.GATSBY_SHOPIFY_ACCESS_TOKEN,
-    //     apiVersion: process.env.GATSBY_SHOPIFY_API_VERSION,
-    //     verbose: false,
-    //     paginationSize: 50,
-    //     includeCollections: ['shop', 'content'],
-    //     downloadImages: false,
+    //     password: process.env.SHOPIFY_ADMIN_PASSWORD,
+    //     storeUrl: `${process.env.GATSBY_SHOPIFY_STORE_NAME}.myshopify.com`,
     //   },
     // },
   ],
